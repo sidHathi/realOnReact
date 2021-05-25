@@ -1,8 +1,17 @@
-# Getting Started with Create React App
+## Firebase Instructions
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This React applicaiton is deployed using [Firebase](https://firebase.google.com/). Once added to the Firebase project, you can access the app's dashboard [here](https://console.firebase.google.com/u/0/project/real-react/overview).
 
-## Available Scripts
+### Firebase setup
+
+* If Firebase isn't installed on your computer use: `npm install -g firebase-tools` [Download node.js](https://nodejs.org/en/download/), if npm isn't recognized.
+* Navigate to the home directory of the repo in the terminal and type `firebase login`. Log into firebase when prompted.
+
+### To deploy
+
+To deploy any changes made to the react application, you will need to build the project (see `npm build` in 'React Instructions' below). Once the project is build use `firebase deploy` to deploy your code to the live website.
+
+## React Instructions
 
 In the project directory, you can run:
 
