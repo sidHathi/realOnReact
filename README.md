@@ -1,3 +1,8 @@
+# REAL Website
+## Siddharth Hathi - May 2021
+
+React.js website for the Relatavistic Electron Atmospheric Dynamics. Contains submodules for webpage content, satellite data retreival, satellite visualization, webpage animation, and React navigation.
+
 ## Firebase Instructions
 
 This React applicaiton is deployed using [Firebase](https://firebase.google.com/). Once added to the Firebase project, you can access the app's dashboard [here](https://console.firebase.google.com/u/0/project/real-react/overview).
