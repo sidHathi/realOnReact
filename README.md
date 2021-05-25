@@ -1,7 +1,15 @@
 # REAL Website
 ## Siddharth Hathi - May 2021
 
-React.js website for the Relatavistic Electron Atmospheric Dynamics. Contains submodules for webpage content, satellite data retreival, satellite visualization, webpage animation, and React navigation.
+React.js website for the Relatavistic Electron Atmospheric Dynamics. Contains submodules for webpage content, satellite data retreival, satellite visualization, webpage animation, and React navigation. (All code contained within the [src](https://github.com/sidHathi/realOnReact/tree/master/src) directory).
+
+#### Links to modules:
+
+* [Pages](src/pages/)
+* [Satellite Visualization](src/satelliteDisplay/)
+* [Satellite Data Retreival](src/Search/)
+* [Animations](src/animations/)
+* [React Navigation](src/navigation/)
 
 ## Firebase Instructions
 
