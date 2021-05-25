@@ -1,0 +1,976 @@
+/*
+Universial classes
+*/
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Barlow', sans-serif;
+    overflow-x: hidden;
+}
+section{
+    overflow-x: hidden;
+    margin-right: 0;
+}
+
+h1{
+    color: white;
+    font-weight: 100;
+    font-size: 200px;
+    margin: 0;
+    line-height: 1;
+}
+h1.logo{
+    font-size: 80px;
+    letter-spacing: 20px;
+}
+h1.secondary{
+    font-size: 144px;
+}
+h1.detailPage{
+    font-size: 200px;
+}
+h2{
+    color: white;
+    font-size: 72px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-left: 20px;;
+}
+h2.secondary{
+    font-size: 36px;
+    font-weight: 700;
+}
+h2.article{
+    text-transform: none;
+    font-size:24px;
+    font-weight:700;
+    margin-right:20px;
+    height:120px;
+}
+h3{
+    padding: 0;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+p{
+    color: whitesmoke;
+    font-weight: 400;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+p.headline{
+    padding-left:0;
+    font-size: 14px;
+    font-weight: 300;
+}
+p.muted{
+    color:#1f1f1f;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 24px;
+}
+p.timeline-item{
+    color: whitesmoke;
+    font-weight: 100;
+    font-size: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}p.timeline-item-m{
+    display: inline-block;
+    color: whitesmoke;
+    font-weight: 100;
+    font-size: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+a:hover{
+    text-decoration: none;
+}
+a:hover h2.article {
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+a.link{
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: 20px;
+    border-bottom: 2px solid red;
+    letter-spacing: 1px;
+}
+a.articleLink{
+    color: whitesmoke;
+    font-weight: 400;
+    font-size: 12px;
+    margin-left: 20px;
+    border-bottom: 2px solid red;
+    letter-spacing: 1px;
+}
+a.articleLinkAlt{
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    margin-left: 0;
+    border-bottom: 2px solid red;
+    letter-spacing: 1px;
+    text-align: right;
+}
+a.exposeLink{
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 20px;
+}
+a.link:hover{
+    color:white;
+    font-weight: 800;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+}
+a.articleLink:hover{
+    color:white;
+    font-weight:500;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+}
+a.exposeLink:hover{
+    color:white;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+}
+a.button{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border: white solid 3px;
+    color: white;
+    background: none;
+    font-weight: 700;
+}
+a.button:hover{
+    background: white;
+    color: black;
+    outline: none;
+    text-decoration: none;
+    font-size: 14px;
+}
+a.button:focus{
+    outline: none;
+
+}
+
+.centerContent{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 20px;
+}
+br.sectionBreak{
+    height: 10vh;
+}
+
+.textSwitch{
+    text-align: left;
+}
+/*
+Navbar classes
+*/
+.navbar{
+    overflow: hidden;
+}
+.navbar.navbar-dark{
+    background-color: rgba(0, 0, 0, 0);
+}
+ul.navList{
+    margin-left: 50px;
+}
+.navbar-expand-lg .navbar-nav .nav-link small{
+    padding-top: 12px;
+    padding-left: 50px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.navbar-dark button.navbar-toggler{
+    outline: none;
+    border: none;
+}
+svg.logo{
+    height: 36px;
+    margin-left: 18vw;
+    margin-top: 6px;
+}
+h3.dataPortal{
+    margin-top: 12px;
+    margin-right: 100px;
+    border-bottom: 2px solid red;
+    color: whitesmoke
+}
+h3.dataPortal:hover{
+    color: white;
+    border-bottom: 2px solid white;
+    font-weight: 800;
+}
+
+svg.logoExpose{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    margin-top: 100px;
+}
+svg.gradRect{
+    width: auto;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+div.openingImage{
+    width: 100%;
+    height: 100vh;
+    overflow:hidden;
+    background-image: url('../assets/spaceStorm.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+div.switchingImage{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/vanAllen.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+}
+div.switchingImage2{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/beautifulMagneticFieldIllustration.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 1 ;
+}
+div.teamImage{
+    width: 100%;
+    height: 30vh;
+    background-image: url('../assets/randomPhoto.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+div.missionBannerImage{
+    width: 100%;
+    height: 60vh;
+    background-image: url('../assets/falconHeavyLaunch.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+div.techBannerImage{
+    width: 100%;
+    height: 60vh;
+    background-image: url('../assets/vanAllen3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+div.scienceBannerImage{
+    width: 100%;
+    height: 60vh;
+    background-image: url('../assets/aurora1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+div.teamBannerImage{
+    width: 100%;
+    height: 60vh;
+    background-image: url('../assets/randomPhoto.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+div.headerText{
+    padding-top: 20vh;
+    width: 100%;
+}
+div.darken{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+div.articleDarken{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .75);
+    padding: 20px 10px;
+}
+div.semiDarken{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+div.openingText{
+    padding-top: 25vh;
+}
+div.greyBanner{
+    background-color: #1f1f1f;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+img.schoolLogo{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    height: 60px;
+    margin-top: 60px;
+}
+svg.underConstruction{
+    fill:#1f1f1f;
+    width: 80%;
+    display: block;
+    margin-right:auto;
+    margin-left:auto;
+    padding: 100px 20px;
+}
+img.schoolLogo.nasa{
+    height: 50px;
+    padding-top: 10px;
+}
+img.schoolLogoLarge{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    height: 120px;
+    margin-top: 80px;
+}
+div.mainTextBlock{
+    padding-top: 25vh;
+}
+div.sectionHeader{
+    padding-top: 25vh;
+    padding-bottom: 20px;
+}
+div.secondaryTextBlock{
+    padding-top: 100vh;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+div.timeline{
+    z-index:100000;
+    top: 33vh;
+    left: 0;
+    position: sticky;
+    height: 0;
+    opacity: 0;
+}
+div.mobileTimeline{
+    padding-top: 40px;
+    top: 10px;
+    left: 0;
+    position: sticky;
+    overflow-x: hidden;
+    height: min-content;
+    white-space: nowrap;
+    background-color: black;
+}
+div.mobileTimeline::after{
+    content: '';
+    height: 1px;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0) 0%, rgba(255, 255, 255) 100%);
+}
+div.line-border{
+    border-left: 1px solid whitesmoke;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-image: linear-gradient(rgb(0, 0, 0), rgb(255, 255, 255)) 0 100%;
+}
+#numbers{
+    margin-top: 25vh;
+    background-color: #1f1f1f;
+}
+#news{
+    margin-top:25vh;
+    background-color: #1f1f1f;
+}
+#footer{
+    margin-top: 20vh;
+    width: 100%;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    background-color: #1f1f1f;
+}
+.borderRight{
+    width: 100%;
+    height: 100%;
+    border-width: 1px;
+    border-right: 1px white;
+    border-style: solid;
+}
+.borderLeft{
+    width: 100%;
+    height: 100%;
+    border-left: 1px white;
+    border-style: solid;
+}
+.borderTop{
+    width: 100%;
+    height: 100%;
+    border-top: 1px white;
+    border-style: solid;
+}
+.borderBottom{
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px white;
+    border-style: solid;
+}
+div.numbersContent{
+    padding: 60px;
+}
+div.rowSpacing{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+div.buttonContainer{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding-top: 12vh
+}
+.onlyMobile{
+    display: none;
+}
+section.links{
+    margin-top: 120px;
+}
+div.textBlock{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 700px;
+    margin-top: 100px;
+}
+div.textBlock.noMargin{
+    margin-top: 0;
+}
+div.customContainer{
+    max-width: 87.5%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+img.blogImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 87.5%;
+    padding-top: 40px;
+}
+div.logoDiv{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    text-align: center;
+    border-right: 1px solid white;
+    padding-bottom: 20px;
+}
+div.references{
+    padding-top: 120px;
+}
+div.newsBlock{
+    border: 1px solid white;
+    padding: 40px 20px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: right;
+    margin-top: 40px;
+    width: 92.5%;
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+    background-color: black;
+}
+div.featuredContent {
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    min-height: 200px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    margin-top: auto;
+}
+div.articlePreview {
+    max-width: 400px;
+    display: block;
+    text-align: right;
+    padding-right: 40px;
+    border-right: 1px solid white;
+}
+
+@media screen and (max-width: 1000px){
+
+    h1{
+        color: white;
+        font-weight: 100;
+        font-size: 100px;
+        margin: 0;
+        line-height: 1;
+        padding-left: 10px;
+    }
+    h1.secondary{
+        font-size: 96px;
+    }
+    h1.detailPage{
+        font-size: 60px;
+    }
+    h2{
+        color: white;
+        font-size: 44px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding-left: 20px;
+    }
+    h2.article{
+        text-transform: none;
+        font-size:20px;
+        font-weight:700;
+        margin-right:20px;
+        height: 120px;
+        overflow:hidden;
+    }
+    h3{
+        padding: 0;
+        color: white;
+        font-weight: 700;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0;
+    }
+
+    h3.dataPortal{
+        margin-left: 50px;
+        font-size:14px;
+        width: fit-content;
+        border-bottom: 2px solid red;
+        color: whitesmoke;
+        padding:0;
+        display: block;
+    }
+    
+    p{
+        color: whitesmoke;
+        font-weight: 400;
+        font-size: 14px;
+        padding-left: 20px;
+    }
+    a.link{
+        color: whitesmoke;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 14px;
+        margin-left: 20px;
+        border-bottom: 2px solid red;
+    }
+    a.link:hover{
+        color:white
+    }
+    a.button{
+        display: inline-block;
+        margin-left: 20px;
+        margin-top: 20px;
+        padding: 10px 30px;
+        border: white solid 3px;
+        color: white;
+        background: none;
+        font-weight: 700;
+        font-size: 14px;
+    }
+    a.button:hover{
+        background: white;
+        color: black;
+        outline: none;
+        text-decoration: none;
+    }
+    a.button:focus{
+        outline: none;
+    
+    }
+    svg.gradRect{
+        width: 60px;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+
+    .navbar{
+        overflow-x: hidden;
+    }
+    .navbar.navbar-dark{
+        background-color: rgba(0, 0, 0, 0);
+    }
+    ul.navList{
+        margin: 0;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link{
+        padding-left: 0;
+    }
+    svg.logo{
+        width: 30px;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    div.openingText{
+        padding-top: 30vh;
+    }
+    div.openingImage{
+        background-image: url('../assets/spaceStorm.jpg');
+    }
+    div.missionBannerImage{
+        background-image: url('../assets/falconHeavyLaunchM.jpg');
+    }
+    div.textBlock{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 87.5%;
+        margin-top: 20px;
+    }
+
+    img.schoolLogo{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        height: 40px;
+        margin-bottom: 40px;
+    }
+    img.schoolLogo.nasa{
+        height: 30px;
+    }
+
+    .noMobile{
+        display: none;
+    }
+    .onlyMobile{
+        display: block;
+    }
+
+
+    #numbers{
+        margin-top: 0;
+        background-color: #1f1f1f;
+    }
+    div.centerMobile{
+        padding-top: 10vh;
+    }
+    div.mobileHalfBlock{
+        width: 100%;
+        height: 50vh;
+        display: block;
+    }
+    div.switchingImgMobile{
+        width: 100%;
+        height: 50vh; 
+        background-image: url('../assets/vanAllen.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        opacity: 1;
+    }
+    div.switchingImgMobile2{
+        width: 100%;
+        height: 50vh; 
+        background-image: url('../assets/beautifulMagneticFieldIllustration.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        opacity: 1;
+    }
+
+    div.numbersContent{
+        padding: 40px;
+    }
+
+    .textSwitch{
+        text-align: right;
+    }
+
+    div.mainTextBlock{
+        padding-top: 20vh;
+        padding-bottom: 15vh;
+    }
+    div.logoDiv{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        text-align: center;
+        border:none;
+        padding-bottom: 20px;
+    }
+    div.newsBlock{
+        border: 1px solid white;
+        padding: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-top: 40px;
+        width: 87.5%;
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+    }
+    div.articleDarken{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px 10px;
+        margin:0;
+    }
+    div.noPadding{
+        padding:0;
+    }
+    div.featuredContent {
+        display: none;
+    }
+}
+
+
+body.light{
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    font-family: 'Barlow', sans-serif;
+    overflow-x: hidden;
+}
+body.light .navbar.navbar-dark{
+    background-color: rgba(0, 0, 0, 1);
+}
+div.loginCard{
+    width: 700px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding:80px;
+    margin-top: 200px;
+    background-color: white;
+}
+body.light h2{
+    color: black;
+    font-size: 72px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding:0;
+}
+body.light h2.secondary{
+    font-size: 36px;
+    font-weight: 700;
+}
+body.light p{
+    color: gray;
+    font-weight: 400;
+    font-size: 20px;
+    padding-left: 0;
+    padding-top: 10px;
+}
+
+input{
+    margin-top: 40px;
+    padding:10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.001);
+    width: 100%;
+}
+input:focus{
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: none;
+    outline: none;
+}
+input[type='submit']{
+    color: white;
+    margin-top: 60px;
+    padding:10px;
+    background-color: black;
+    width: 100%;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+input[type="submit"]:hover{
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.01);
+    color: black;
+    box-shadow: 
+      inset 0 0 15px rgba(55, 84, 170,0),
+      inset 0 0 20px rgba(255, 255, 255,0),
+      7px 7px 15px rgba(55, 84, 170,.15),
+      -7px -7px 20px rgba(255, 255, 255,1),
+      inset 0px 0px 4px rgba(255, 255, 255,.2);
+}
+input[type='submit']:active{
+    box-shadow: none;
+}
+#signupItems{
+    display: none;
+}
+body.light p.errorText{
+    font-size: 14px;
+    color: red;
+    padding:0;
+    margin:0;
+    padding-top: 10px;
+    display: none;
+}
+div.satContainer{
+    display: block;
+    width: 80%;
+    height: max-content;
+    overflow: hidden;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+
+div.maidenLaunchArticle{
+    background-image: url("../assets/exolaunch.jpeg");
+}
+div.contractArticle{
+    background-image: url("../assets/ff_1200.png");
+}
+
+.SearchBox {
+    border: none;
+    border-radius: 0px;
+    padding: 5px 0;
+    width: 100%;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 2em;
+    outline: none;
+}
+
+.Result {
+    max-width: 400px;
+    display: block;
+    margin: 200px -200px;
+    margin-right: auto;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-top-right-radius: 10px;
+    padding: 4px 10px;
+}
+
+
+.RemoveButton {
+    float: right;
+    cursor: pointer;
+}
+
+.SmallButton {
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+
+@media only screen and (max-width: 999px) {
+    .Info {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    
+    .Search {
+        position: absolute;
+        top: 60px;
+        left: 10px;
+        width: 120px;
+    }
+        
+    .Selected {
+        position: absolute;
+        right: 10px;
+        top: 40px;
+        width: 120px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    .Info {
+        position: absolute;
+        top: 100px;
+        left: 50px;
+    }
+    
+    .Search {
+        position: absolute;
+        top: 180px;
+        left: 50px;
+        width: 200px;
+    }
+        
+    .Selected {
+        position: absolute;
+        right: 50px;
+        top: 180px;
+        width: 200px;
+    }
+}
+.earth{
+    height: 700px;
+}
+@media screen and (max-width: 1000px){
+    .earth{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        height: 500px;
+    }
+    div.satContainer{
+        width:100%;
+        overflow: hidden;
+        height: min-content;
+    }
+    .Result {
+        max-width: 400px;
+        display: block;
+        margin: 0;
+        margin-right: auto;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        background-color: rgba(255, 255, 255, 0.1);
+        border-top-right-radius: 10px;
+        padding: 4px 10px;
+    }
+}
+canvas{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: min-content;
+}
