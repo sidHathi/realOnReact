@@ -1,3 +1,12 @@
+/**
+ * team.js
+ * 
+ * JSX element class that exports a react component containing the
+ * website's team page.
+ * 
+ * Siddharth Hathi, REAL, May 2021
+ */
+
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import '../css/style.css';
@@ -5,6 +14,7 @@ import { Link, withRouter } from "react-router-dom";
 
 class Team extends React.Component{
 
+    // JSX html document
     render(){
         return(
             <div>

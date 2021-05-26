@@ -1,6 +1,13 @@
+/**
+ * SelectedStations.js
+ * 
+ * Exports a React.js object that displays a card containing station information
+ */
+
 import React from 'react';
 import { StationCard } from '../Search/SearchResults';
 
+// The React object
 export default function({selected, onRemoveStation, onRemoveAll, onStationClick}) {
     if (!selected || selected.length === 0) return null;
 

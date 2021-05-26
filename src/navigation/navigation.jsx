@@ -1,6 +1,21 @@
+/**
+ * navigation.js
+ * 
+ * Contains functionality for displaying the navigation
+ * bar with appropriate styling and functionality using
+ * react-router-dom
+ */
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 
+/**
+ * Navigation
+ * 
+ * Renders the navigation bar
+ * 
+ * @param {*} props Possible parameters passed into the object
+ * @returns The navbar
+ */
 function Navigation(props){
     return(
 

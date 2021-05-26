@@ -1,3 +1,12 @@
+/**
+ * science.js
+ * 
+ * JSX element class that exports a react component containing the
+ * website's tech page.
+ * 
+ * Siddharth Hathi, REAL, May 2021
+ */
+
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Link, withRouter } from "react-router-dom";
@@ -5,6 +14,7 @@ import '../css/style.css';
 
 class Tech extends React.Component{
 
+    // JSX html document
     render(){
         return(
             <div>

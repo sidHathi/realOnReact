@@ -1,3 +1,12 @@
+/**
+ * mission.js
+ * 
+ * JSX element class that exports a react component containing the
+ * website's mission page.
+ * 
+ * Siddharth Hathi, REAL, May 2021
+ */
+
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { render } from 'react-dom'
@@ -15,12 +24,12 @@ import gsap from 'gsap';
 import CSSRulePlugin from 'gsap/CSSRulePlugin';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SatDisplay from '../satelliteDisplay/satelliteDisplay'
-
 gsap.registerPlugin(ScrollTrigger);
 
 
 class Mission extends React.Component{
 
+    // Activates necessary animations from animations module on page load
     componentDidMount(){
         openingAnimation();
         goalsAnimations();
@@ -30,7 +39,9 @@ class Mission extends React.Component{
         displayStickyTimeline();
     }
 
+    // JSX html document for the page
     render(){
+        // Accepts hot changes to the modules displayed
         if (module.hot) {
             module.hot.accept()
         }
@@ -68,9 +79,15 @@ class Mission extends React.Component{
                     </small>
                     </p>
                 </div>
+
+                {/**
+                 * Mounts the SatDisplay react class here
+                 */}
                 <div className="satContainer" id='sat'>
                     <SatDisplay />
                 </div>
+
+
                 <div className="onlyMobile mobileTimeline" id="timelineM">
                 <div className="mobileTimeline-wrapper">
                     <p className="timeline-item-m" id="tl1">APRIL 2022 (T-0)</p>

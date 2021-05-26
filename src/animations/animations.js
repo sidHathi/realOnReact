@@ -1,5 +1,5 @@
 /**
- * Animations.js
+ * animations.js
  * 
  * Library containing functions for animating static webpage elements.
  * The functions use the widely used GSAP animations library.

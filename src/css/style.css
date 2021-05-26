@@ -1,3 +1,5 @@
+/* CSS Stylesheet for REAL's website */
+
 /*
 Universial classes
 */
@@ -216,6 +218,8 @@ svg.logo{
     margin-left: 18vw;
     margin-top: 6px;
 }
+
+/* Specific Styles */
 h3.dataPortal{
     margin-top: 12px;
     margin-right: 100px;

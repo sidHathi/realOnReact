@@ -1,3 +1,9 @@
+/**
+ * ScrollToTop.jsx
+ * 
+ * Helper function: exports react object that scrolls page to top on load
+ */
+
 import React from "react";
 import { withRouter } from "react-router-dom";
 

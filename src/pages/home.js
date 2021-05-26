@@ -1,3 +1,12 @@
+/**
+ * home.js
+ * 
+ * JSX element class that exports a react component containing the
+ * website's home page.
+ * 
+ * Siddharth Hathi, REAL, May 2021
+ */
+
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import '../css/style.css';
@@ -10,12 +19,12 @@ import {openingAnimation, goalsAnimations, goalsAnimationsM, handleNavTransparen
 import gsap from 'gsap';
 import CSSRulePlugin from 'gsap/CSSRulePlugin';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 gsap.registerPlugin(ScrollTrigger);
 
 
 class Home extends React.Component {
 
+    // Activates animations library when page loads
     componentDidMount(){
         openingAnimation();
         goalsAnimations();
@@ -23,6 +32,7 @@ class Home extends React.Component {
         handleNavTransparent();
     }
 
+    // JSX html document for the page
     render(){
         return (
             <div>

@@ -1,3 +1,9 @@
+/**
+ * app.js
+ * 
+ * Hosting module for the react App. Exports a react object containing the website
+ */
+
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/home";
