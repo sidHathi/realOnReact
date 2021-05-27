@@ -1,3 +1,9 @@
+/**
+ * index.js
+ * 
+ * Adds the React App from app.js to the html doc.
+ */
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { render } from "react-dom";

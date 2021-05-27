@@ -1,10 +1,25 @@
+/**
+ * tle.js
+ * 
+ * Module containing functions for parsing data from celestrak TLE API
+ */
+
 import * as satellite from 'satellite.js/lib/index';
 
-
+// Class Constants
 export const EarthRadius = 6371;
-
 const rad2Deg = 180 / 3.141592654;
 
+/**
+ * parseTleFile
+ * 
+ * Splits a tle file into an array of structs containing the TLE's name
+ * and the the TLEs themselves.
+ * 
+ * @param {*} fileContent TLE contents returned from the API
+ * @param {*} stationOptions Display options for the station
+ * @returns 
+ */
 export const parseTleFile = (fileContent, stationOptions) => {
     const result = [];
     const lines = fileContent.split("\n");
@@ -41,6 +56,17 @@ export const parseTleFile = (fileContent, stationOptions) => {
 // __ Satellite locations _________________________________________________
 
 
+/**
+ * latLong2Xyz
+ * 
+ * Function that converts between the satellites latitude and longitude
+ * and it's xyz locations in the Three.js scene
+ * 
+ * @param {*} radius 
+ * @param {*} lat 
+ * @param {*} lon 
+ * @returns xyz coords
+ */
 const latLon2Xyz = (radius, lat, lon) => {
     var phi   = (90-lat)*(Math.PI/180)
     var theta = (lon+180)*(Math.PI/180)
@@ -52,10 +78,28 @@ const latLon2Xyz = (radius, lat, lon) => {
     return { x, y, z };
 }
 
+/**
+ * toThree
+ * 
+ * Converts a vector to a Three.js vector
+ * 
+ * @param {*} v Struct containing x, y, and z vals
+ * @returns The Three.js vector
+ */
 const toThree = (v) => {
     return { x: v.x, y: v.z, z: -v.y };
 }
 
+/**
+ * getSolution
+ * 
+ * Uses the satelite.js module to return a satellite object
+ * for the TLE station.
+ * 
+ * @param {*} station 
+ * @param {*} date 
+ * @returns 
+ */
 const getSolution = (station, date) => {
     
     if (!station.satrec) {
@@ -69,6 +113,16 @@ const getSolution = (station, date) => {
 
 
 // type: 1 ECEF coordinates   2: ECI coordinates
+/**
+ * getPositionFromTle
+ * 
+ * Returns the position of a satellite from it's TLE
+ * 
+ * @param {*} station 
+ * @param {*} date 
+ * @param {*} type 
+ * @returns 
+ */
 export const getPositionFromTle = (station, date, type = 1) => {
     if (!station || !date) return null;
 

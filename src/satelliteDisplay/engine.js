@@ -1,9 +1,11 @@
 /**
  * engine.js
  * 
- * Exports driver object for the Three.js visualization. The 'engine' 
- * contains code for getting satellite data from the TLE API, and for
+ * Exports driver object class for the Three.js satellite visualization. 
+ * The 'engine' contains code for getting satellite data from the TLE API, and for
  * building and populating the Three.js satellite display.
+ * 
+ * Relies extensively on open-source code from: https://github.com/dsuarezv/satellite-tracker by dsuarezv
  * 
  * Siddharth Hathi, REAL, May 2021
  */
