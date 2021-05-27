@@ -1,7 +1,9 @@
 # Satellite Display
 ## REAL Website
 
-This module defines react.js objects that retreive satellite data from celestrak and display them using Three.js
+This module defines react.js objects that retreive satellite data from celestrak and display them using Three.js.
+
+Built on code from https://github.com/dsuarezv/satellite-tracker by dsuarezv
 
 ## engine.js
 
@@ -46,3 +48,59 @@ _addEarth();
 _findStationFromMesh(threeObject);
 ```
 
+## SatDisplay
+
+The SatDisplay class defines a React.js object that leverages the engine defined in engine.js to render the satellite visualization for web viewing.
+
+### Usage
+
+The SatDisplay can be added to any React scene using:
+
+```js
+<SatDisplay />
+```
+
+### Function Prototypes
+
+
+##### Rendering Functions
+
+```js
+componentDidMount();
+componentWillUnmount();
+processQuery(stations);
+findStationById(stations, id);
+handleStationClicked(station);
+toggleSelection(station);
+addStations();
+addCelestrakSets();
+addAmsatSets();
+handleTimer();
+```
+
+##### Unused Functions
+
+The class also contains code for selecting and searching satellites that comes from dsuarez's original satellite visualization project. While they aren't used currently, they do have potential for future implementation.
+
+```js
+isSelected(station);
+selectStation(station);
+deselectStation(station);
+handleSearchResultClick(station);
+handleRemoveSelected(station);
+handleRemoveAllSelected();
+```
+
+## tle.js
+
+The tle.js file contains library functions for parsing output from the celestrak TLE API, and converting between coordinate systems.
+
+##### Function prototypes
+
+```js
+parseTleFile(fileContent, stationOptions);
+latLon2Xyz(radius, lat, lon);
+toThree(v);
+getSolution(station, date);
+getPositionFromTle(station, date, type = 1);
+```
